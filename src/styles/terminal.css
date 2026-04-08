@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.terminal-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.terminal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: #222;
+  border-radius: 3px;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #E0E0E0;
+  animation: cursor-blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 1px;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal-scroll {
+    font-size: 11px !important;
+    padding: 8px 10px !important;
+    padding-top: 60px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-scroll {
+    font-size: 9px !important;
+    padding: 6px 8px !important;
+    padding-top: 60px !important;
+  }
+}
+
+.terminal-cursor-hidden {
+  display: none;
+}
