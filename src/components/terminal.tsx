@@ -63,7 +63,7 @@ const Terminal: FC = () => {
 
   const downloadCV = useCallback(() => {
     const link = document.createElement("a");
-    link.href = "/portfolio/Hesham_CHAUDHRY_cv.pdf";
+    link.href = "/Hesham_CHAUDHRY_cv.pdf";
     link.download = "Hesham_CHAUDHRY_cv.pdf";
     link.click();
   }, []); 
@@ -447,7 +447,7 @@ const Terminal: FC = () => {
           width: 44, marginTop: 4,
           display: "flex", alignItems: "center",
         }}>
-        <img src="/portfolio/kali.svg"/>
+        <img src="/kali.svg"/>
         </div>
 
 
