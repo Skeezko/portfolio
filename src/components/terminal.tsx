@@ -412,7 +412,7 @@ const Terminal: FC = () => {
     <div
       style={{
         width: "100%",
-        minHeight: "100vh",
+        minHeight: "100dvh",
         background: "#0d0d1a",
         display: "flex",
         flexDirection: "column",
