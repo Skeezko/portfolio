@@ -41,7 +41,7 @@ const Terminal: FC = () => {
       { type: "out", text: "\n" },
       { type: "out", text: BANNER },
       { type: "out", text: "\n" },  
-      { type: "out", text: "         TEPITECH Paris — Bachelor (2025-2028)" },
+      { type: "out", text: "         EPITECH Paris — Bachelor (2025-2028)" },
       { type: "out", text: "                   \x1bRCybersecurity\x1bE "},
       { type: "out", text: "        \x1bYNew here? Type help to see all commands\x1bE" },
       { type: "out", text: "\n" },
