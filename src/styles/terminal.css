@@ -49,6 +49,13 @@
   }
 }
 
+@media (max-width: 480px) {
+  .terminal-scroll {
+    font-size: 10px !important;
+    padding-top: 50px !important;
+  }
+}
+
 .terminal-cursor-hidden {
   display: none;
 }

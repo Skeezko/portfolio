@@ -41,7 +41,7 @@ const Terminal: FC = () => {
       { type: "out", text: "\n" },
       { type: "out", text: BANNER },
       { type: "out", text: "\n" },  
-      { type: "out", text: "         EPITECH Paris — Bachelor (2025-2028)" },
+      { type: "out", text: "         TEPITECH Paris — Bachelor (2025-2028)" },
       { type: "out", text: "                   \x1bRCybersecurity\x1bE "},
       { type: "out", text: "        \x1bYNew here? Type help to see all commands\x1bE" },
       { type: "out", text: "\n" },
@@ -412,7 +412,7 @@ const Terminal: FC = () => {
     <div
       style={{
         width: "100%",
-        minHeight: "100dvh",
+        minHeight: "100vh",
         background: "#0d0d1a",
         display: "flex",
         flexDirection: "column",
@@ -447,7 +447,7 @@ const Terminal: FC = () => {
           width: 44, marginTop: 4,
           display: "flex", alignItems: "center",
         }}>
-        <img src="/kali.svg"/>
+        <img src="/kali.svg"style={{ width: 30, height: "auto", maxHeight: 20, maxWidth: 30}} />
         </div>
 
 
