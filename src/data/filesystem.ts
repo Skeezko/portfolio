@@ -156,9 +156,9 @@ export const FileSystem: Record<string, DirAndFile> = {
     content: `  ┌──────────────┬──────────────┐
   │   Language   │    Level     │
   ├──────────────┼──────────────┤
-  │ C            │ \x1bGAdvanced\x1bE     │
-  │ Rust         │ \x1bGAdvanced\x1bE     │
-  │ Python       │ \x1bYProficient\x1bE   │
+  │ C            │ \x1bGProficient\x1bE   │
+  │ Rust         │ \x1bGProficient\x1bE   │
+  │ Python       │ \x1bYIntermediate\x1bE │
   │ Bash         │ \x1bOIntermediate\x1bE │
   │ SQL          │ \x1bOIntermediate\x1bE │
   │ Assembly     │ \x1bRBeginner\x1bE     │
