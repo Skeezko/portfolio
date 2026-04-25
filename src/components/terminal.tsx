@@ -62,10 +62,16 @@ const Terminal: FC = () => {
   );
 
   const downloadCV = useCallback(() => {
-    const link = document.createElement("a");
-    link.href = "/Hesham_CHAUDHRY_cv.pdf";
-    link.download = "Hesham_CHAUDHRY_cv.pdf";
-    link.click();
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    if (isMobile){
+      window.open("/Hesham_CHAUDHRY_cv.pdf", "_blank");
+    } else {
+      const link = document.createElement("a");
+      link.href = "/Hesham_CHAUDHRY_cv.pdf";
+      link.download = "Hesham_CHAUDHRY_cv.pdf";
+      link.click();
+    }
+    
   }, []); 
   
   const submit = useCallback(() => {
@@ -104,7 +110,7 @@ const Terminal: FC = () => {
       setLines((l) => [...l, promptLine, { type: "out", text: "  \x1bG[✓]\x1bE Hesham_CHAUDHRY_cv.pdf" }]);
       setInput("");
       setCursorPos(0);
-      setTimeout(downloadCV, 600);
+      setTimeout(downloadCV, 400);
       fetch("/api/download", {method: "POST"}).catch(() => {});
       setCwd(result.cwd);
       return;
